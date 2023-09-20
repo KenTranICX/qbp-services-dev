@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AD8A7119-B305-48BB-A0C8-6988545EE60A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentGenerator", "DocumentGenerator", "{7D08CF64-DF35-4265-9BE2-B8007F7C8EE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentGenerator.API", "Services\DocumentGenerator\DocumentGenerator.API\DocumentGenerator.API.csproj", "{D1D93D0A-F5B0-4B0E-B5D8-027CC76BA373}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1D93D0A-F5B0-4B0E-B5D8-027CC76BA373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D93D0A-F5B0-4B0E-B5D8-027CC76BA373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D93D0A-F5B0-4B0E-B5D8-027CC76BA373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D93D0A-F5B0-4B0E-B5D8-027CC76BA373}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D08CF64-DF35-4265-9BE2-B8007F7C8EE8} = {AD8A7119-B305-48BB-A0C8-6988545EE60A}
+		{D1D93D0A-F5B0-4B0E-B5D8-027CC76BA373} = {7D08CF64-DF35-4265-9BE2-B8007F7C8EE8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F405786-DAC2-4D4B-A56B-235CF2003B34}
+	EndGlobalSection
+EndGlobal

@@ -1,10 +1,9 @@
-using DocumentGenerator.API.ServiceProvider.Interfaces;
-using DocumentGenerator.API.ServiceProvider.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.Logging.AzureAppServices;
 using Azure.Identity;
 using Azure.Core.Diagnostics;
+using DocumentGenerator.API.Core.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -65,6 +64,8 @@ if (app.Environment.IsDevelopment())
   app.UseSwagger();
   app.UseSwaggerUI();
 }
+
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

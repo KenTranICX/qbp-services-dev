@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  insurancepremium.api:
+    image: ${DOCKER_REGISTRY-}insurancepremiumapi
+    build:
+      context: .
+      dockerfile: Services/InsurancePremiumRater/InsurancePremium.API/Dockerfile
+
+
+  documentgenerator.api:
+    image: ${DOCKER_REGISTRY-}documentgeneratorapi
+    build:
+      context: .
+      dockerfile: services/DocumentGenerator/DocumentGenerator.API/Dockerfile
+
